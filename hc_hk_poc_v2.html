@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HK PoC v2.0</title><link rel="stylesheet" href="assets/styles.css"></head><body><aside class="rail"><div class="navitem"><a class="bubble" href="index.html" style="display:grid;place-items:center;text-decoration:none">HOME</a></div><div class="navitem"><a class="bubble" href="index.html#hc" style="display:grid;place-items:center;text-decoration:none">Healthcheck</a><div class="flyout"><h4>Healthcheck</h4><div class="flygrid"><a href="hc_hk_ideation_v2.html">HK Ideation v2.0</a><a href="hc_hk_poc_v2.html">HK PoC v2.0</a><a href="hc_hk_prod_v2.html">HK Prod v2.0</a><a href="hc_uk_ideation_v2.html">UK Ideation v2.0</a><a href="hc_uk_poc_v2.html">UK PoC v2.0</a><a href="hc_uk_prod_v2.html">UK Prod v2.0</a><a href="hc_hk_ideation_v1.html">HK Ideation v1.0</a><a href="hc_hk_poc_v1.html">HK PoC v1.0</a><a href="hc_hk_prod_v1.html">HK Prod v1.0</a><a href="hc_uk_ideation_v1.html">UK Ideation v1.0</a><a href="hc_uk_poc_v1.html">UK PoC v1.0</a><a href="hc_uk_prod_v1.html">UK Prod v1.0</a></div></div></div><div class="navitem"><a class="bubble" href="index.html#rt" style="display:grid;place-items:center;text-decoration:none">Regression Test</a><div class="flyout"><h4>Regression Test</h4><div class="flygrid"><a href="rt_hk_ideation_v2.html">HK Ideation v2.0</a><a href="rt_hk_poc_v2.html">HK PoC v2.0</a><a href="rt_hk_prod_v2.html">HK Prod v2.0</a><a href="rt_uk_ideation_v2.html">UK Ideation v2.0</a><a href="rt_uk_poc_v2.html">UK PoC v2.0</a><a href="rt_uk_prod_v2.html">UK Prod v2.0</a><a href="rt_hk_ideation_v1.html">HK Ideation v1.0</a><a href="rt_hk_poc_v1.html">HK PoC v1.0</a><a href="rt_hk_prod_v1.html">HK Prod v1.0</a><a href="rt_uk_ideation_v1.html">UK Ideation v1.0</a><a href="rt_uk_poc_v1.html">UK PoC v1.0</a><a href="rt_uk_prod_v1.html">UK Prod v1.0</a></div></div></div></aside><header><div><h1>Agent Hub Testing Dashboard</h1><small>Healthcheck &amp; Regression Test</small></div><small>Prototype · Sample data only</small></header><main><div class="detailtitle"><div><div class="subtitle" id="crumb"></div><h2 id="detailname"></h2></div><div class="actions"><a class="btn" href="index.html">← Back to Overview</a><a id="jiraDashboard" class="btn primary">↗ Open Jira Dashboard</a></div></div><div class="notice">Prototype data only. Configure this environment's Jira dashboard URL and replace sample execution and defect data before publishing.</div><div class="panel"><h3>Test Execution Summary</h3><div class="stats" id="stats"></div><div style="margin-top:20px"><b id="completionText"></b><div class="track"><div id="detailprogress"></div></div></div></div><div class="panel"><h3>Outstanding Defects by Priority</h3><div class="priority" id="priority"></div></div><div class="panel"><div class="topline"><h3 style="margin:0">Outstanding Defect List</h3><input id="search" placeholder="Search ID, assignee or summary..."></div><div class="tablewrap"><table><thead><tr><th>Priority</th><th>Jira ID</th><th>Assignee</th><th>Summary</th></tr></thead><tbody id="defects"></tbody></table></div></div></main><script>window.reportData={
+  "purpose": "hc",
+  "region": "HK",
+  "stage": "PoC",
+  "version": "v2.0",
+  "jiraDashboardUrl": null,
+  "updatedAt": null,
+  "execution": {
+    "total": 197,
+    "passed": 129,
+    "failed": 4,
+    "blocked": 3,
+    "cancelled": 1,
+    "notApplicable": 1
+  },
+  "defects": [
+    {
+      "priority": "Highest",
+      "key": "DEMO-02-001",
+      "assignee": "Tester A",
+      "summary": "Agent runtime returns unexpected response",
+      "url": null
+    },
+    {
+      "priority": "High",
+      "key": "DEMO-02-002",
+      "assignee": "Tester B",
+      "summary": "Tool discovery timeout during execution",
+      "url": null
+    },
+    {
+      "priority": "Medium",
+      "key": "DEMO-02-003",
+      "assignee": "Tester C",
+      "summary": "Session fails to resume after refresh",
+      "url": null
+    },
+    {
+      "priority": "Low",
+      "key": "DEMO-02-004",
+      "assignee": "Tester A",
+      "summary": "Environment-specific regression issue",
+      "url": null
+    },
+    {
+      "priority": "Highest",
+      "key": "DEMO-02-005",
+      "assignee": "Tester B",
+      "summary": "Agent runtime returns unexpected response",
+      "url": null
+    },
+    {
+      "priority": "High",
+      "key": "DEMO-02-006",
+      "assignee": "Tester C",
+      "summary": "Tool discovery timeout during execution",
+      "url": null
+    },
+    {
+      "priority": "Medium",
+      "key": "DEMO-02-007",
+      "assignee": "Tester A",
+      "summary": "Session fails to resume after refresh",
+      "url": null
+    },
+    {
+      "priority": "Low",
+      "key": "DEMO-02-008",
+      "assignee": "Tester B",
+      "summary": "Environment-specific regression issue",
+      "url": null
+    },
+    {
+      "priority": "Highest",
+      "key": "DEMO-02-009",
+      "assignee": "Tester C",
+      "summary": "Agent runtime returns unexpected response",
+      "url": null
+    },
+    {
+      "priority": "High",
+      "key": "DEMO-02-010",
+      "assignee": "Tester A",
+      "summary": "Tool discovery timeout during execution",
+      "url": null
+    }
+  ]
+};</script><script src="assets/detail.js"></script></body></html>
