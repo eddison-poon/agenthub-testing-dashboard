@@ -1,10 +1,13 @@
-# Confirmed environment mapping (non-sensitive labels only)
+# Confirmed environment mapping
 
 - Purpose: Regression Test (`rt`)
 - Region: HK
-- Environment: PPD
+- Source environment label: PPD
+- Dashboard stage: PoC (**PPD = PoC**, confirmed by user)
 - Version: v2
-- Target dashboard report key: **not yet created** (`rt_hk_ppd_v2` is proposed)
-- Current dashboard stage set: `ideation`, `poc`, `prod`. **Do not map PPD to PoC or Prod.**
-- Actual Zephyr cycle ID, fixVersion, project, and JQL reporter identifier belong only in ignored `inputs/query-config.local.md`, not this public repository.
-- Status: confirmed identity; waiting for approval to add PPD as a distinct environment.
+- Dashboard report key: `rt_hk_poc_v2`
+- HTML: `rt_hk_poc_v2.html`
+- Data: `data/rt_hk_poc_v2.js`
+- Query source: Zephyr ZQL test cycle (cycle ID and other internal query identifiers must remain in ignored `inputs/query-config.local.md`).
+- Outstanding defects: Jira JQL (internal query values remain local).
+- No new PPD cards or HTML files are required.
